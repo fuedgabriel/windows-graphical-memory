@@ -7,5 +7,6 @@ def MemWin():
     for linha in arq:
         if linha.find("Display Memory:") > -1 or linha.find("Shared Memory:") > -1:
             graf = print(linha.lstrip(" "))
+            return graf
 
     arq.close()
